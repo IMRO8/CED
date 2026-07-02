@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudOps Employee Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+  <div>
+    <h1>CloudOps Dashboard</h1>
+    <p>Employee operations overview</p>
+  </div>
+
+  <button id="themeToggle" class="theme-button" type="button">
+    Toggle Theme
+  </button>
+</header>
+
+  <main class="dashboard-layout">
+    <button id="themeToggle" class="theme-button" type="button">
+  Toggle Theme
+    </button>
+
+  <aside class="sidebar" aria-label="Dashboard navigation">
+  <h2>Menu</h2>
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#employees">Employees</a>
+    <a href="#request-form">Request Access</a>
+  </nav>
+</aside>
+
+<section id="overview" class="cards-grid" aria-label="Dashboard statistics">
+  <article class="card">
+    <h2>Total Employees</h2>
+    <p class="metric">128</p>
+  </article>
+
+  <article class="card">
+    <h2>Active Projects</h2>
+    <p class="metric">14</p>
+  </article>
+
+  <article class="card">
+    <h2>Pending Access Requests</h2>
+    <p class="metric">7</p>
+  </article>
+</section>
+
+
+<section id="employees" class="panel">
+  <h2>Employee List</h2>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Team</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Asha Rao</td>
+          <td>Frontend Engineer</td>
+          <td>Platform</td>
+          <td><span class="status active">Active</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+<section id="request-form" class="panel">
+  <h2>Request System Access</h2>
+
+  <form id="accessForm">
+    <label for="employeeName">Employee Name</label>
+    <input id="employeeName" name="employeeName" type="text" required />
+
+    <label for="systemName">System Name</label>
+    <select id="systemName" name="systemName" required>
+      <option value="">Select a system</option>
+      <option value="aws">AWS Console</option>
+      <option value="github">GitHub</option>
+      <option value="jira">Jira</option>
+    </select>
+
+    <label for="reason">Reason</label>
+    <textarea id="reason" name="reason" rows="4" required></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+
+  <p id="formMessage" role="status"></p>
+</section>
+
+
+
+
+
+
+
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
