@@ -1,29 +1,4 @@
-# Dependencies
-node_modules/
-
-# Build outputs
-dist/
-build/
-.vite/
-
-# Test coverage
-coverage/
-
-# Environment variables / secrets
+node_modules
+dist
 .env
-.env.local
-.env.*.local
-
-# OS files
 .DS_Store
-Thumbs.db
-
-# Editor files
-.vscode/
-.idea/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
