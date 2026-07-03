@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Asha Kumar",
+    "Role": "Cloud Engineer",
+    "Team": "Infrastructure",
+    "Status": "Active"
+  },
+  {
+    "name": "Rahul Mehta",
+    "Role": "Security Analyst",
+    "Team": "CloudOps",
+    "Status": "Active"
+  },
+  {
+    "name": "Maya Iyer",
+    "Role": "DevOps Engineer",
+    "Team": "Platform",
+    "Status": "On Leave"
+  },
+  {
+    "name": "Daniel Rao",
+    "Role": "Backend Developer",
+    "Team": "API Services",
+    "Status": "Active"
+  },
+  {
+    "name": "Neha Singh",
+    "Role": "Frontend Developer",
+    "Team": "Dashboard",
+    "Status": "Inactive"
+  },
+  {
+    "name": "Arjun Patel",
+    "Role": "Site Reliability Engineer",
+    "Team": "Operations",
+    "Status": "Active"
+  },
+  {
+    "name": "Priya Nair",
+    "Role": "Product Manager",
+    "Team": "CloudOps",
+    "Status": "Active"
+  },
+  {
+    "name": "Karan Shah",
+    "Role": "Data Engineer",
+    "Team": "Analytics",
+    "Status": "Pending"
+  }
+]
