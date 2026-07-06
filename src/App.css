@@ -1,0 +1,107 @@
+.App-body {
+  padding: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(135deg, #f8fafc, #e0f2fe, #ede9fe);
+color: #1e293b;
+
+}
+.App-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  
+
+  background: linear-gradient(135deg, #1e3a8a, #2563eb, #06b6d4);
+  color: white;
+
+  padding: 18px;
+  border-radius: 36px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+}
+
+.employee-section {
+  margin-bottom: 24px;
+ 
+}
+
+.employee-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 46px;
+   margin-left: 30px;
+}
+
+.employee-card {
+  width: 180px;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+}
+
+.employee-card:hover {
+  background-color: #1f2937;
+  color: white;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.25);
+  ;
+}
+
+.employee-card img {
+  border-radius: 70%;
+}
+
+.request-row {
+  display:flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.requests-card,
+.newRequest {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.request-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.newRequest form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.newRequest input,
+.newRequest select,
+.newRequest button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 680px) {
+  .App-body {
+    padding: 16px;
+  }
+
+  .request-row {
+    flex-direction: column;
+  }
+
+  .requests-card,
+  .newRequest {
+    width: 100%;
+  }
+
+  .employee-card {
+    width: 100%;
+  }
+}
