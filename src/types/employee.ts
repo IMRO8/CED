@@ -1,4 +1,3 @@
-
 export type RandomUser = {
   name: {
     first: string;
@@ -14,12 +13,12 @@ export type RandomUser = {
 
 export type RandomUserResponse = {
   results: RandomUser[];
-}
+};
 
 export type Employee = {
-    name: string;
-    phoneNumber: string;
-    profilePicture: string;
+  name: string;
+  phoneNumber: string;
+  profilePicture: string;
 };
 
 export type ACCRequest = {
