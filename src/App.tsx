@@ -54,7 +54,7 @@ function App() {
   }
 
   return (
-    <>
+
       <main className="App-body">
         <section className="employee-section">
           <h2 className="App-title">Employee Dashboard</h2>
@@ -121,7 +121,7 @@ function App() {
           </section>
         </div>
       </main>
-    </>
+  
   );
 }
 

@@ -7,11 +7,12 @@
 .App-title {
   font-size: 28px;
   margin-bottom: 20px;
+  margin-left: 10px;
 
   background: linear-gradient(135deg, #1e3a8a, #2563eb, #06b6d4);
   color: white;
 
-  padding: 18px;
+  padding: 28px;
   border-radius: 36px;
   text-align: center;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
@@ -100,4 +101,16 @@
   .employee-card {
     width: 100%;
   }
+}
+
+
+html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+body {
+  background: linear-gradient(to right, #e0f7ff, #eef0ff);
 }

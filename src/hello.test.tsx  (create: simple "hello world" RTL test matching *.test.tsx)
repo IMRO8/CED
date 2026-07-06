@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^latest",
+    "@testing-library/react": "^latest",
+    "@testing-library/jest-dom": "^latest"
+  }
+}
+
+import { render, screen } from '@testing-library/react';
+import Hello from './Hello';
+
+test('renders hello world', () => {
+  render(<Hello />);
+  const linkElement = screen.getByText(/hello world/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+export default {
+  test: {
+    environment: 'jsdom'
+  }
+}
+
+{
+  "compilerOptions": {
+    "types": ["vitest/globals"]
+  }
+}
+
+import '@testing-library/jest-dom';
