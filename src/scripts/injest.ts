@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 import { createReadStream, createWriteStream } from "node:fs";
 import { opendir, mkdir } from "node:fs/promises";
 import {
@@ -11,7 +10,6 @@ import {
 } from "node:path";
 import { StringDecoder } from "node:string_decoder";
 import { once } from "node:events";
-
 type CliOptions = {
   inputDirectory: string;
   outputFile: string;
