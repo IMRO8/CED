@@ -10,21 +10,21 @@ return (
   <BrowserRouter>
   
     <Routes>
+        <Route path="/login" element={<Login />} />
 
+        <Route path="/" element={<Navigate to="/login" replace />} />
+
+        <Route path="*" element={<Navigate to="/login" replace />} />
+      
+ 
 
          <Route element={<ProtectedRoute />}>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route index element={<Dashboard />} />
         <Route path="/reqs" element={<Reqs />} />
       </Route>
-
-        <Route path="/login" element={<Login />} />
-
-        <Route path="/" element={<Navigate to="/login" replace />} />
-
-        <Route path="*" element={<Navigate to="/login" replace />} />
-      </Routes>
-    
+</Routes>
+           
     
       </BrowserRouter>
 

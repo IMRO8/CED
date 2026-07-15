@@ -1,0 +1,12 @@
+{
+  "format": "markdown-chunks-v1",
+  "chunkSize": 4000,
+  "overlap": 300,
+  "chunks": [
+    {"id":0,"source":"math_test.md","chunkIndex":0,"text":"## Mathematical Equations\n\nAn inline equation: $E = mc^2$.\n\nA block equation:\n$$\n\\\\frac{n!}{k!(n-k)!} = \\\\binom{n}{k}\n$$\n\nA chemical formula: $H_2O$ and $C_6H_{12}O_6$."},
+    {"id":1,"source":"syntax_test.md","chunkIndex":0,"text":"# Header 1\n## Header 2\n### Header 3\n\nThis is a **bold** and *italic* text example. \nYou can also use ***bold italic*** for emphasis.\n\n## Lists\n- Item 1\n- Item 2\n  - Sub-item 1\n  - Sub-item 2\n\n1. Numbered item 1\n2. Numbered item 2\n\n## Links and Images\nCheck out the [Markdown Guide](https://markdownguide.org) for more syntax rules.\n![Placeholder Image](https://placeholder.com)"},
+    {"id":2,"source":"feature_test.md","chunkIndex":0,"text":"## Blockquotes\n> \"If you are going to try, go all the way.\" — Charles Bukowski\n\n## Code Blocks\nHere is how you write JavaScript:\n```javascript\nconst greet = (name) => {\n  console.log(`Hello, ${name}!`);\n};\ngreet(\"Tester\");\n```\n\n## Tables\n\n| Header 1 | Header 2 | Header 3 |\n| :--- | :---: | ---: |\n| Left | Center | Right |\n| Data | Data | Data |"}
+  ],
+  "filesProcessed": 3,
+  "chunksWritten": 3
+}
