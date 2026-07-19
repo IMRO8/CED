@@ -22,7 +22,9 @@ export type Employee = {
 };
 
 export type ACCRequest = {
+  id: number;
   employeeName: string;
   reason: string;
   resource: string;
+  createdAt: string;
 };

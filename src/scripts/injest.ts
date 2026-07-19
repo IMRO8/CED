@@ -71,7 +71,7 @@ async function* streamMarkdownChunks(
   overlap: number,
 ): AsyncGenerator<string> {
   const input = createReadStream(filePath, {
-    highWaterMark: 64 * 1024,
+    highWaterMark: 64 * 1024, //64 KB data limit
   });
 
   const decoder = new StringDecoder("utf8");

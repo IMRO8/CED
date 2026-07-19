@@ -1,0 +1,21 @@
+    1  ls
+    2  npx --yes --package=prisma@latest -- prisma bootstrap --api-key "eyJraWQiOiJUa0hEN1ltOUNaQ2xESHYwazEyTEFhWjk4NTdGOE16dWxYTXJBMFpqbWVrIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJ3b3Jrc3BhY2U6Y21ycXRlNDY4MDlqdXllZjdmeTZyMXFlZSIsImp0aSI6ImlwMTd2YzhhZTJka295dXd1eTE3aHNwNiIsImlhdCI6MTc4NDQwNjI4MDcxNX0.iwH9S2k69ltsAEjo0JptS9QFQbNJ19FjzAfvYLEQdZx5CL52T3Ssu3aqUc-rEcZJCJYqv6gVcSVi2gck8o7V3YHPhxGDmGaqPZc1O4UdemYD3BExH0l1MX5OmLF2HsKIW-HGOw54Q8Az7oJmfqAE6iBYZy9w6FUhuk2L7spoIJAuOvuYoKLwliXR3I5aVaUZ3M_BWWYra2f4GoE1QgtpP4xXE3A_44-HE3cDuecpAeXlsPEzi8Dlih-s9CUOwJ0UmPfBDs_G1X3abbE__TIiQZnO8rEHYyEme2N7PjHYn6KJHgHi0QA-IAGSvI9PLNi9zWXJB9vu_G-ufxAL3g9soA" --database "db_cmrqteema02ax3xdvo4odfu6y"
+    3  npx prisma studio
+    4  npm i prisma @prisma/client
+    5  npx prisma init
+    6  npx prisma migrate dev
+    7  npx prisma generate
+    8  npm i ioredis
+    9  docker run -p 6379:6379 redis
+   10  npx prisma generate
+   11  docker --version
+   12  docker ps
+   13  docker compose up -d
+   14  docker compose ps
+   15  docker compose logs postgres
+   16  sudo -u postgres psql
+   17  sudo apt install postgresql-client -y
+   18  docker compose ps
+   19  docker exec -it ced-postgres psql -U postgres
+   20  cat history >> setup_cmds.txt
+   21  history > setup_cmds.txt
