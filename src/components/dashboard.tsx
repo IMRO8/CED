@@ -4,9 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import type { Employee } from "../types/employee";
 
-// NOTE: Employee now represents a DB row, so it must include `id`:
-//   type Employee = { id: string; name: string; phoneNumber: string; profilePicture?: string };
-// The old RandomUserResponse type is no longer used here.
+
 
 // useMutation is used for changing server data.
 //useQuery is for reading:
