@@ -16,9 +16,10 @@ export type RandomUserResponse = {
 };
 
 export type Employee = {
+  id: string;           
   name: string;
   phoneNumber: string;
-  profilePicture: string;
+  profilePicture?: string;  
 };
 
 export type ACCRequest = {

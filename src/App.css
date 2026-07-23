@@ -114,3 +114,10 @@ html, #root {
 body {
   background: linear-gradient(to right, #e0f7ff, #eef0ff);
 }
+
+.employee-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}

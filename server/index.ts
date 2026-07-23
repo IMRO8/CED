@@ -2,8 +2,8 @@ import "dotenv/config";
 
 import cors from "cors";
 import express from "express";
-
 import { prisma } from "./db";
+import {listEmployees,createEmployee,updateEmployee,deleteEmployee} from "./employees"
 
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
@@ -15,6 +15,8 @@ app.use(
     origin: "http://localhost:5173",
   }),
 );
+
+
 
 function readRequestBody(body: {
   employeeName?: unknown;
@@ -36,7 +38,9 @@ function readRequestBody(body: {
       ? body.resource.trim()
       : "";
 
-  return {
+  
+  
+return {
     employeeName,
     reason,
     resource,
@@ -211,13 +215,10 @@ app.put("/api/requests/:id", async (req, res) => {
 
 /*
  * DELETE
- *
- * DELETE /api/requests/5
  */
 app.delete("/api/requests/:id", async (req, res) => {
   try {
     const id = readId(req.params.id);
-
     if (id === null) {
       return res.status(400).json({
         error: "Invalid request ID",
@@ -266,5 +267,16 @@ async function shutdown() {
   });
 }
 
-process.on("SIGINT", shutdown);
+
+app.get("/api/employees",async (_req, res) => res.json(await listEmployees()));
+app.post("/api/employees",    async (req, res) => res.json(await createEmployee(req.body)));
+app.put("/api/employees/:id", async (req, res) => res.json(await updateEmployee(req.params.id, req.body)));
+app.delete("/api/employees/:id", async (req, res) => { await deleteEmployee(req.params.id); res.status(204).end(); });
+
+
+
+
+
 process.on("SIGTERM", shutdown);
+process.on("SIGINT", shutdown);
+

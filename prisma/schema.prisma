@@ -17,6 +17,13 @@ model User {
   email String @unique
   name  String
 }
+model Employee {
+  id             String   @id @default(uuid())
+  name           String
+  phoneNumber    String
+  profilePicture String?
+  createdAt      DateTime @default(now())
+}
 
 model EmployeeRequest {
   id           Int      @id @default(autoincrement())

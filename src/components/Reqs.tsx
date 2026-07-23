@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
-
 import type { ACCRequest } from "../types/employee";
+import { useNavigate } from "react-router-dom";
 
 export function Reqs() {
+  const navigate = useNavigate();
   const [employeeName, setEmployeeName] = useState("");
   const [reason, setReason] = useState("");
   const [resource, setResource] = useState("");
@@ -316,6 +317,10 @@ export function Reqs() {
             </button>
           )}
         </form>
+
+        <button onClick={() =>{navigate("/dashboard")}}>
+          Dashboard
+        </button>
       </section>
     </div>
   );
